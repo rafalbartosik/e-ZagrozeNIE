@@ -30,7 +30,7 @@ MAX_DISTANCE_DEGREES = 0.001  # ok. 100 m
 @st.cache_data
 def load_all_data():
     # Plik musi nazywać się dokładnie tak i być w tym samym folderze na GitHub
-    df = pd.read_csv("dane_wypadki_export_2018_2024.csv")
+    df = pd.read_csv("dane_wypadki_export_2024.csv")
     return df
 
 # Wczytujemy dane raz na starcie
@@ -346,3 +346,4 @@ else:
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2: st.image("pl.gif", width='stretch')
+
