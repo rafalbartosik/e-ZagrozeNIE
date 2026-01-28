@@ -1,4 +1,4 @@
-# eZagrozeNIE - Road Safety Analysis System / System Analizy Bezpieczeństwa Tras
+# eZagrozeNIE - Road Risk Platform / Platforma Zagrożeń Drogowych
 
 ## Link to the Website:  https://e-zagrozenie.streamlit.app
 
