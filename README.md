@@ -22,6 +22,7 @@ eZagrozeNIE is a web application built with Python and the Streamlit framework, 
 * Machine Learning: Scikit-learn (Logistic Regression)
 * Data Source: Historical road accident dataset (CSV format)
 
+* To use the dataset for the Lubuskie Voivodeship covering the years 2018–2024, change the filename in e-zagrozenie.py to ### dane_wypadki_2018_2024.csv; however, please note that the application may run slower as a result.
 ---
 
 ## Wersja Polska
@@ -46,6 +47,7 @@ e-ZagrożeNIE to aplikacja webowa stworzona w języku Python z wykorzystaniem fr
 * Uczenie maszynowe: Scikit-learn (Logistic Regression)
 * Źródło danych: Historyczny zbiór danych o wypadkach drogowych (format CSV)
 
+* Aby korzystać z danych dla województwa lubuskiego z lat 2018–2024, należy w pliku e-zagrozenie.py zmienić nazwę wczytywanego pliku na ### dane_wypadki_2018_2024.csv, jednak miej na uwadze, że aplikacja może wtedy działać wolniej.
 ---
 
 ### Local Installation / Instalacja lokalna
