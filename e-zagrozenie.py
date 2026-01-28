@@ -26,17 +26,15 @@ st.markdown(
 
 MAX_DISTANCE_DEGREES = 0.001  # ok. 100 m
 
-# --- NOWA SEKCJA: WCZYTYWANIE PLIKU ZAMIAST BAZY ---
+
 @st.cache_data
 def load_all_data():
     # Plik musi nazywać się dokładnie tak i być w tym samym folderze na GitHub
-    df = pd.read_csv("dane_wypadki_export.csv")
+    df = pd.read_csv("dane_wypadki_export_2018_2024.csv")
     return df
 
 # Wczytujemy dane raz na starcie
 all_data = load_all_data()
-
-# --- PRZEKSZTAŁCONE FUNKCJE DOSTĘPU DO DANYCH ---
 
 def fetch_street_suggestions(query: str) -> list[str]:
     if not query or len(query) < 3: return []
@@ -83,7 +81,6 @@ def fetch_accidents(route_coords):
         return res_df
     return pd.DataFrame()
 
-# --- TWOJA ORYGINALNA LOGIKA (BEZ ZMIAN) ---
 
 def point_to_segment_distance(px, py, ax, ay, bx, by):
     P, A, B = np.array([px, py]), np.array([ax, ay]), np.array([bx, by])
@@ -347,4 +344,5 @@ if st.session_state.result:
 
 else:
     col1, col2, col3 = st.columns([1, 2, 1])
+
     with col2: st.image("pl.gif", width='stretch')
