@@ -53,7 +53,7 @@ e-ZagrożeNIE to aplikacja webowa stworzona w języku Python z wykorzystaniem fr
 ### Local Installation / Instalacja lokalna
 
 1. Clone the repository / Sklonuj repozytorium:
-   git clone https://github.com/rafbar4/eZagrozeNIE.git
+   git clone https://github.com/rafalbartosik/e-ZagrozeNIE.git
 
 2. Install dependencies / Zainstaluj biblioteki:
    pip install -r requirements.txt
