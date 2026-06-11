@@ -1,4 +1,4 @@
-# e-ZagrożeNIE - Road Risk Platform / Platforma Zagrożeń Drogowych
+# eZagrożeNIE - Road Risk Platform / Platforma Zagrożeń Drogowych
 
 ## Link to the Website:  https://ezagrozenie.streamlit.app
 
@@ -22,7 +22,7 @@ eZagrozeNIE is a web application built with Python and the Streamlit framework, 
 * Machine Learning: Scikit-learn (Logistic Regression)
 * Data Source: Historical road accident dataset (CSV format)
 
-* To use the dataset for the Lubuskie Voivodeship covering the years 2018–2024, change the filename in e-zagrozenie.py to **dane_wypadki_2018_2024.csv**; however, please note that the application may run slower as a result.
+* To use the dataset for the Lubuskie Voivodeship covering the years 2018–2024, change the filename in eZagrozenie.py to **dane_wypadki_2018_2024.csv**; however, please note that the application may run slower as a result.
 ---
 
 ## Wersja Polska
@@ -30,7 +30,7 @@ eZagrozeNIE is a web application built with Python and the Streamlit framework, 
 ## Link do storny internetowej:  https://ezagrozenie.streamlit.app
 
 ### Opis Projektu
-e-ZagrożeNIE to aplikacja webowa stworzona w języku Python z wykorzystaniem frameworka Streamlit, służąca do analizy wypadków drogowych na trasach w województwie lubuskim. System pozwala użytkownikowi wyznaczyć trasę między dwoma punktami i sprawdza historyczne dane o zdarzeniach drogowych w buforze bezpieczeństwa wzdłuż wybranej trasy.
+eZagrożeNIE to aplikacja webowa stworzona w języku Python z wykorzystaniem frameworka Streamlit, służąca do analizy wypadków drogowych na trasach w województwie lubuskim. System pozwala użytkownikowi wyznaczyć trasę między dwoma punktami i sprawdza historyczne dane o zdarzeniach drogowych w buforze bezpieczeństwa wzdłuż wybranej trasy.
 
 ### Główne Funkcje
 * Wyznaczanie tras: Integracja z API OSRM w celu dostarczenia trasy głównej oraz opcji alternatywnych.
@@ -47,19 +47,19 @@ e-ZagrożeNIE to aplikacja webowa stworzona w języku Python z wykorzystaniem fr
 * Uczenie maszynowe: Scikit-learn (Logistic Regression)
 * Źródło danych: Historyczny zbiór danych o wypadkach drogowych (format CSV)
 
-* Aby korzystać z danych dla województwa lubuskiego z lat 2018–2024, należy w pliku e-zagrozenie.py zmienić nazwę wczytywanego pliku na **dane_wypadki_2018_2024.csv**, jednak miej na uwadze, że aplikacja może wtedy działać wolniej.
+* Aby korzystać z danych dla województwa lubuskiego z lat 2018–2024, należy w pliku eZagrozenie.py zmienić nazwę wczytywanego pliku na **dane_wypadki_2018_2024.csv**, jednak miej na uwadze, że aplikacja może wtedy działać wolniej.
 ---
 
 ### Local Installation / Instalacja lokalna
 
 1. Clone the repository / Sklonuj repozytorium:
-   git clone https://github.com/rafalbartosik/e-ZagrozeNIE.git
+   git clone https://github.com/rafalbartosik/eZagrozeNIE.git
 
 2. Install dependencies / Zainstaluj biblioteki:
    pip install -r requirements.txt
 
 3. Run the app / Uruchom aplikację:
-   streamlit run e-zagrozenie.py
+   streamlit run eZagrozenie.py
 
 Project developed as part of university coursework at the Faculty of Mathematics and Computer Science (WMI), Adam Mickiewicz University in Poznan.
 Projekt przygotowany w ramach zajęć na Wydziale Matematyki i Informatyki (WMI) Uniwersytetu im. Adama Mickiewicza w Poznaniu.
