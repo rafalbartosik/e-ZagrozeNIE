@@ -334,7 +334,7 @@ if st.session_state.result:
         pred_dataframe[f'weekday_{now.weekday() + 1}*time_of_day_{time_of_day}'] = 1
 
     # policzone prawdopodobieństwo:
-        prob_val = round(pd.DataFrame(model.predict_proba(pred_dataframe)).loc[0, 1] * 100, 2)
+        prob_val = round(pd.DataFrame(model.predict_proba(pred_dataframe)).loc[0, 1], 2)
         st.markdown(
             f"<p style='color: black; font-weight: bold; font-size: 1.1em;'>"
             f"Prawdopodobieństwo wypadku w godzinach {time_of_day}: {prob_val}%"
