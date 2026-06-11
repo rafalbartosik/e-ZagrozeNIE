@@ -304,7 +304,7 @@ if st.session_state.result:
     # usuwanie duplikatów:
         final_dataframe.drop_duplicates(subset=['time_of_day', 'day', 'month', 'year'], keep='first', inplace=True, ignore_index=True)
     # jeśli jest w danej jednostce czasu (przedział godzinowy danego dnia) jakiś wypadek to obserwacja zerowa z końca datafrejmu się usunie, również wiele wypadków w tej samej jednostce czasu się usunie i zostanie jeden dzięki czemu będzie można zrobić zero-jedynkowe obserwacje
-        final_dataframe['lon'] = [0 if str(x) == 'nan' else 1 for x in final_dataframe['lon']]  # dychotomizujemy wypadki
+        final_dataframe['lon'] = final_dataframe['lon'].notna().astype(int)  # dychotomizujemy wypadki
         final_dataframe.rename(columns={'lon': 'accidents'}, inplace=True) # zmieniamy nazwę kolumny
     # kolumna "dzień tygodnia":
         final_dataframe['weekday'] = [datetime.date(int(final_dataframe['year'][i]), int(final_dataframe['month'][i]), int(final_dataframe['day'][i])).weekday() + 1 for i in range(len(final_dataframe['year']))]
@@ -334,7 +334,7 @@ if st.session_state.result:
         pred_dataframe[f'weekday_{now.weekday() + 1}*time_of_day_{time_of_day}'] = 1
 
     # policzone prawdopodobieństwo:
-        prob_val = round(pd.DataFrame(model.predict_proba(pred_dataframe)).loc[0, 1], 2)
+        prob_val = round(pd.DataFrame(model.predict_proba(pred_dataframe)).loc[0, 1] * 100, 2)
         st.markdown(
             f"<p style='color: black; font-weight: bold; font-size: 1.1em;'>"
             f"Prawdopodobieństwo wypadku w godzinach {time_of_day}: {prob_val}%"
