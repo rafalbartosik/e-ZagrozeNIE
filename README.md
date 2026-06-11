@@ -1,6 +1,6 @@
 # e-ZagrożeNIE - Road Risk Platform / Platforma Zagrożeń Drogowych
 
-## Link to the Website:  https://e-zagrozenie.streamlit.app
+## Link to the Website:  https://ezagrozenie.streamlit.app
 
 ## English Version
 
@@ -27,7 +27,7 @@ eZagrozeNIE is a web application built with Python and the Streamlit framework, 
 
 ## Wersja Polska
 
-## Link do storny internetowej:  https://e-zagrozenie.streamlit.app
+## Link do storny internetowej:  https://ezagrozenie.streamlit.app
 
 ### Opis Projektu
 e-ZagrożeNIE to aplikacja webowa stworzona w języku Python z wykorzystaniem frameworka Streamlit, służąca do analizy wypadków drogowych na trasach w województwie lubuskim. System pozwala użytkownikowi wyznaczyć trasę między dwoma punktami i sprawdza historyczne dane o zdarzeniach drogowych w buforze bezpieczeństwa wzdłuż wybranej trasy.
